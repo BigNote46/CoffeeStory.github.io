@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+	margin: 0;
+	padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+.responsive-bar{
+    display: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+    z-index: 10;
+}
+
+nav.black{
+    background: rgba(0,0,0,0.8);
+    height: 80px;
+    padding: 10px 50px;
+}
+nav .logo{
+    float: left;
+}
+nav .logo img{
+    height: 80px;
+    transition: .5s;
+}
+nav.black .logo img{
+    height: 60px;
+}
+nav > ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav > ul > li.login {
+    margin-left: auto;
+}
+
+nav > ul > li.login > a {
+    color: #f00;
+    font-weight: bold;
+}
+
+nav > ul > li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav > ul > li > a:hover{
+    background: #f00;
+    color: #fff;
+}
+nav > ul > li > a {
+    color: #262626;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 80px;
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+nav.black > ul > li > a{
+    color: #fff;
+    line-height: 60px;
+}
+#coffee-menu {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 100px auto 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.category-title {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-item {
+    width: 23%;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.menu-item img:hover {
+    transform: scale(1.1);
+}
+
+.menu-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.menu-description {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.menu-price {
+    font-size: 16px;
+    color: #f00;  /* ใช้สีแดงเพื่อดึงความสนใจ */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 48%;
+    }
+}
+footer {
+    background: rgba(0,0,0,0.8);
+    color: #f4f0ec;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box; 
+}

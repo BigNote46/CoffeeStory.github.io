@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Story</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="login"><a href="login_register.html">Login</a></li>
+        </ul>
+    </nav>
+    <script>
+        document.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('black');
+            } else {
+                nav.classList.remove('black');
+            }
+        });
+    </script>
+
+<section id="coffee-menu">
+    <div class="container">
+        <h2 class="section-title">เมนูกาแฟ</h2>
+
+        <div class="menu-category">
+            <h3 class="category-title">ลาเต้ (Latte)</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="image/latte1.jpg" alt="Latte 1">
+                    <p class="menu-name">ลาเต้รูปม้ายูนิคอร์น</p>
+                    <p class="menu-description">"ม้ายูนิคอร์นในถ้วยกาแฟแห่งความฝัน เปรียบเสมือนความมหัศจรรย์ที่ไม่รู้จบ"</p>
+                    <p class="menu-price">฿100</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/latte2.jpg" alt="Latte 2">
+                    <p class="menu-name">ลาเต้รูปสุนัขจิ้งจอก</p>
+                    <p class="menu-description">"ความเฉลียวฉลาดในรูปของสุนัขจิ้งจอก เติมเต็มความสดชื่นในทุกการดื่ม"</p>
+                    <p class="menu-price">฿120</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/latte3.jpg" alt="Latte 1">
+                    <p class="menu-name">ลาเต้รูปกระต่ายน่ารัก</p>
+                    <p class="menu-description">"กระต่ายน้อยในถ้วยกาแฟ สัญลักษณ์ของความน่ารักและอบอุ่น"</p>
+                    <p class="menu-price">฿100</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/latte4.jpg" alt="Latte 2">
+                    <p class="menu-name">ลาเต้รูปนกจิ๊บๆ</p>
+                    <p class="menu-description">"เสียงจิ๊บ ๆ ของนก เติมเต็มวันใหม่ด้วยความสดใสในถ้วยกาแฟ"</p>
+                    <p class="menu-price">฿120</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/latte5.jpg" alt="Latte 1">
+                    <p class="menu-name">ลาเต้รูปกระต่าย 2 ตัว</p>
+                    <p class="menu-description">"กระต่ายสองตัวในท่าทางน่ารัก เติมความหวานให้กับกาแฟทุกแก้ว"</p>
+                    <p class="menu-price">฿100</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/latte6.jpg" alt="Latte 2">
+                    <p class="menu-name">ลาเต้รูปแมวเหมียว</p>
+                    <p class="menu-description">"แมวเหมียวในถ้วยกาแฟ เติมเต็มความน่ารักและอบอุ่นให้กับทุกช่วงเวลา"</p>
+                    <p class="menu-price">฿120</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/latte7.jpg" alt="Latte 1">
+                    <p class="menu-name">ลาเต้รูปดอกไม้</p>
+                    <p class="menu-description">"ดอกไม้ในกาแฟ มอบความสดชื่นและความสงบให้กับการดื่มทุกครั้ง"</p>
+                    <p class="menu-price">฿100</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/latte8.jpg" alt="Latte 2">
+                    <p class="menu-name">ลาเต้รูปแมว</p>
+                    <p class="menu-description">"แมวน้อยในถ้วยกาแฟ น่ารักและเต็มไปด้วยเสน่ห์ที่ทำให้คุณหลงรัก"</p>
+                    <p class="menu-price">฿120</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 class="category-title">เมนูอื่นๆ</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="image/m8.png" alt="Coffee 1">
+                    <p class="menu-name">เอสเปรสโซ</p>
+                    <p class="menu-description">กาแฟเข้มข้นเหมาะกับผู้ที่ชื่นชอบรสกาแฟแท้</p>
+                    <p class="menu-price">฿80</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/m7.png" alt="Coffee 2">
+                    <p class="menu-name">คาปูชิโน</p>
+                    <p class="menu-description">รสชาติกลมกล่อมระหว่างกาแฟและนม</p>
+                    <p class="menu-price">฿90</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/m6.png" alt="Coffee 1">
+                    <p class="menu-name">เอสเปรสโซ</p>
+                    <p class="menu-description">กาแฟเข้มข้นเหมาะกับผู้ที่ชื่นชอบรสกาแฟแท้</p>
+                    <p class="menu-price">฿80</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/m5.png" alt="Coffee 2">
+                    <p class="menu-name">คาปูชิโน</p>
+                    <p class="menu-description">รสชาติกลมกล่อมระหว่างกาแฟและนม</p>
+                    <p class="menu-price">฿90</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/m4.png" alt="Coffee 1">
+                    <p class="menu-name">เอสเปรสโซ</p>
+                    <p class="menu-description">กาแฟเข้มข้นเหมาะกับผู้ที่ชื่นชอบรสกาแฟแท้</p>
+                    <p class="menu-price">฿80</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/m3.png" alt="Coffee 2">
+                    <p class="menu-name">คาปูชิโน</p>
+                    <p class="menu-description">รสชาติกลมกล่อมระหว่างกาแฟและนม</p>
+                    <p class="menu-price">฿90</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/m2.png" alt="Coffee 1">
+                    <p class="menu-name">เอสเปรสโซ</p>
+                    <p class="menu-description">กาแฟเข้มข้นเหมาะกับผู้ที่ชื่นชอบรสกาแฟแท้</p>
+                    <p class="menu-price">฿80</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/m1.png" alt="Coffee 2">
+                    <p class="menu-name">คาปูชิโน</p>
+                    <p class="menu-description">รสชาติกลมกล่อมระหว่างกาแฟและนม</p>
+                    <p class="menu-price">฿90</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p class="text-center">Copyright © 2024 บริษัท Coffee Story จำกัด</p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
